@@ -1,0 +1,37 @@
+---
+title: "Exponential Distribution"
+author: "SS Huh"
+date: '2020 12 2 '
+output: html_document
+---
+
+## 지수분포 정의 - 연속형
+
+어떤 사건의 발생이 포아송분포를 따른다는 가정하에 어떤 사건이 첫 번째로 발생할 때까지 소요되는 대기시간 X는 지수분포를 따르며 이의 확률밀도함수는 다음과 같다.
+$$
+f(x)=\lambda e^{-\lambda x}, x>0, \lambda>0
+$$
+이때 E(X)=1/λ, Var(X)=1/λ^2이다.
+지수분포를 따르는 r개의 독립적인 확률변수들의 합은 감마분포를 따른다.
+
+## 적률생성함수
+
+$$
+M(t)=E(e^{tX})=\int_{0}^{\infty }e^{tx}\cdot f(x)=\int_{0}^{\infty }e^{tx}\cdot \lambda e^{-\lambda x}=\int_{0}^{\infty } \lambda e^{-(\lambda-t) x}=\left [ -\frac{\lambda }{\lambda -t} e^{-(\lambda -t)x} \right ]_{0}^{\infty }=\frac{\lambda }{\lambda -t}
+$$
+
+## 기대값(평균)
+## 분산
+
+
+##예제01
+한반도에 발생하는 지진의 규모 X가 평균 2.4인 지수분포 Exp(1/2.4)를 따를 때 다음번에 일어날 지진의 규모가 3.6보다 클 확률을 구하라.
+```{r}
+
+result=1-pexp(3.6, 1/2.4)
+print(result)
+```
+
+
+
+
