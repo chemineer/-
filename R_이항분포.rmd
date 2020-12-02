@@ -18,6 +18,13 @@ $$
 $$
 M(t)=E(e^{tX})=\sum_{x=0}^{n}e^{tx}\cdot P(X)=\sum_{x=1}^{n}e^{tx}\cdot \binom{n}{x}p^{x}q^{n-x}=\sum_{x=1}^{n}(pe^{t})^{x}\cdot \binom{n}{x}q^{n-x}=\left [ (1-p)+pe^{t} \right ]^{n}
 $$
+##예제01
+동전을 10번 던졌을 때 앞면이 나온 횟수를 변수 X라고 할 때 P(X>=4)를 구하라.
+```{r}
+#P(X<=3)을 구하여 1에서 빼면 원하는 답이 된다.
+result=1-pbinom(3,10,0.5)
+print(result)
+```
 
 
 

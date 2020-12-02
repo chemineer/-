@@ -22,6 +22,11 @@ $$
 $$
 E(x)=\sum_{x}^{}x\cdot P(X)=\left [ x\cdot P(X) \right ]^{x=0}+\left [ x\cdot P(X) \right ]^{x=1}=0\cdot p^{0}(1-p)+1\cdot p(1-p)^{0}=p
 $$
+or
+$$
+E(X)=M{}'(0)=pe^0=p
+$$
+
 ## 분산
 $$
 Var(x)=E(x^2)-E(x)^2=E(x^2)-p^2
@@ -29,6 +34,11 @@ $$
 $$
 E(x^2)=\sum_{x}^{}x^2\cdot P(X)=\left [ x^2\cdot P(X) \right ]^{x=0}+\left [ x^2\cdot P(X) \right ]^{x=1}=0\cdot p^{0}(1-p)+1\cdot p(1-p)^{0}=p
 $$
+or
+$$
+E(x^2)=M{}''(0)=pe^0=p
+$$
+
 $$
 \therefore Var(x)=E(x^2)-E(x)^2=p-p^2=p(1-p)
 $$
