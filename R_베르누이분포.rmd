@@ -1,0 +1,36 @@
+---
+title: "Bernoulli Distribution"
+author: "SS Huh"
+date: '2020 12 1 '
+output: html_document
+---
+
+## 베르누이분포 정의
+
+어떤 확률변수 X가 서로 배반적인 두 값(성공이면 X=1, 실패이면 X=0)을 가질 때 확률변수 X는 베르누이분포를 따른다. 이 때 확률함수/확률밀도함수/확률질량함수는 다음과 같다.
+$$
+P(X=r)=p^{r}(1-p)^{1-r}, (단 p+q=1, r=0,1)
+$$
+이때 E(X)=p, Var(X)=p(1-p)이다.
+
+## 적률생성함수
+
+$$
+M(t)=E(e^{tX})=\sum_{x}^{}e^{tx}\cdot P(X)=\left [ e^{tx}\cdot P(X) \right ]^{x=0}+\left [ e^{tx}\cdot P(X) \right ]^{x=1}=e^{0}\cdot p^{0}(1-p)+e^{t}\cdot p(1-p)^{0}=(1-p)+pe^{t}
+$$
+## 기대값(평균)
+$$
+E(x)=\sum_{x}^{}x\cdot P(X)=\left [ x\cdot P(X) \right ]^{x=0}+\left [ x\cdot P(X) \right ]^{x=1}=0\cdot p^{0}(1-p)+1\cdot p(1-p)^{0}=p
+$$
+## 분산
+$$
+Var(x)=E(x^2)-E(x)^2=E(x^2)-p^2
+$$
+$$
+E(x^2)=\sum_{x}^{}x^2\cdot P(X)=\left [ x^2\cdot P(X) \right ]^{x=0}+\left [ x^2\cdot P(X) \right ]^{x=1}=0\cdot p^{0}(1-p)+1\cdot p(1-p)^{0}=p
+$$
+$$
+\therefore Var(x)=E(x^2)-E(x)^2=p-p^2=p(1-p)
+$$
+
+

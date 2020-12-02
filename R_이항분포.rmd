@@ -1,0 +1,24 @@
+---
+title: "Binomial Distribution"
+author: "SS Huh"
+date: '2020 12 1 '
+output: html_document
+---
+
+## 이항분포 정의
+
+성공확률이 p인 베르누이 실험을 n번 독립적으로 반복 시행할 때 성공횟수 (X)가 r일 확률함수/확률밀도함수/확률질량함수는 다음과 같다.
+$$
+P(X=r)=\binom{n}{r}p^{r}q^{n-r}, (단 p+q=1, r=1,2,...,n)
+$$
+이때 E(X)=np, Var(X)=npq이다.
+
+## 적률생성함수
+
+$$
+M(t)=E(e^{tX})=\sum_{x=0}^{n}e^{tx}\cdot P(X)=\sum_{x=1}^{n}e^{tx}\cdot \binom{n}{x}p^{x}q^{n-x}=\sum_{x=1}^{n}(pe^{t})^{x}\cdot \binom{n}{x}q^{n-x}=\left [ (1-p)+pe^{t} \right ]^{n}
+$$
+
+
+
+
