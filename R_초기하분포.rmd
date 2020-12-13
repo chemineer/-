@@ -1,0 +1,25 @@
+---
+title: "Hypergeometric Distribution"
+author: "SS Huh"
+date: '2020 12 2 '
+output: html_document
+---
+
+## 초기하분포 정의 - 이산형
+
+N은 모집단의 크기, D는 모집단에서 특성값 1의 개수, n은 표본크기, r은 표본에서 특성값 1의 개수일 때 확률함수는 다음과 같다.
+$$
+f(x)=\frac{\binom{D}{x}\binom{N-D}{n-x} }{\binom{N}{n}}  , N>=n, D>=x
+$$
+이때 E(X)=np, Var(X)=npq(N-n)/(N-1)이다. (단 p=D/N)
+
+## 적률생성함수
+
+$$
+M(t)=E(e^{tX})
+$$
+
+## 기대값(평균)
+## 분산
+
+##예제01
