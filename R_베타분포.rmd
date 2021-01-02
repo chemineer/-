@@ -1,0 +1,31 @@
+---
+title: "Beta Distribution"
+author: "SS Huh"
+date: '2021 01 01 '
+output: html_document
+---
+
+## 베타분포 정의 
+
+성공확률이 p인 베르누이 실험을 n번 독립적으로 반복 시행할 때 성공횟수 (X)가 r일 확률함수/확률밀도함수/확률질량함수는 다음과 같다.
+$$
+f(x)=\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}x^{\alpha-1}(1-x)^{\beta-1}, (단 0<x<1, \alpha,\beta >0)
+$$
+$$
+\Gamma(n)=(n-1)!
+$$
+$$
+\Gamma(n+1)=n\Gamma(n)
+$$
+
+
+## 적률생성함수
+
+
+## 기대값(평균)
+$$
+E(x)=\frac{\alpha}{\alpha+\beta}
+$$
+## 분산
+
+##예제01
